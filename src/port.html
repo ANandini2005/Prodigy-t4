@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>John Doe</h1>
+            <p>Creative Web Developer Specializing in Responsive Design</p>
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a web developer with a passion for creating beautiful and functional websites. I have a degree in Computer Science and have been working in the industry for 5 years.</p>
+            <h3>Education</h3>
+            <p>Bachelor of Science in Computer Science, University of XYZ</p>
+            <h3>Professional Experience</h3>
+            <p>Web Developer, ABC Company (2018-present)</p>
+            <p>Junior Web Developer, DEF Company (2016-2018)</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                    <a href="https://project1.com">View Project</a>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                    <a href="https://project2.com">View Project</a>
+                </li>
+                <li>
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                    <a href="https://project3.com">View Project</a>
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Git/GitHub</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem-solving</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <label for="profile-pic">Profile Picture:</label><br>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*" onchange="previewImage()"><br>
+                <div id="image-preview"></div>
+                <input type="submit" value="Send">
+            </form>
+            <ul>
+                <li><a href="https://linkedin.com/in/johndoe">LinkedIn</a></li>
+                <li><a href="https://github.com/johndoe">GitHub</a></li>
+                <li><a href="https://twitter.com/johndoe">Twitter</a></li>
+            </ul>
+        </section>
+        
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
